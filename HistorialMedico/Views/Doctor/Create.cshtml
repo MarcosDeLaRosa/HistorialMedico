@@ -1,0 +1,25 @@
+﻿@model HistorialMedico.Models.doctor
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<form action="/doctor/Create" method="post">
+    @Html.LabelFor(e => e.nombre);
+    @Html.EditorFor(e => e.nombre);
+    <br>
+    @Html.LabelFor(e => e.apellido);
+    @Html.EditorFor(e => e.apellido);
+    <br>
+    @Html.LabelFor(e => e.telefono);
+    @Html.EditorFor(e => e.telefono);
+    <br>
+    @Html.LabelFor(e => e.correo);
+    @Html.EditorFor(e => e.correo);
+    <br>
+    @Html.LabelFor(e => e.foto);
+    @Html.EditorFor(e => e.foto);
+    <br>
+    <input type="submit" class="btn btn-primary" />
+</form>
